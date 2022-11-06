@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/personal/personal",
+        "pages/myvedio/vedio"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#d43c33",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "dragon云音乐"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color":"#333",
+        "selectedColor": "#d43c33",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "发现",
+                "iconPath": "/static/images/music_normal.png",
+                "selectedIconPath": "/static/images/music.png"
+            },
+            {
+                "pagePath": "pages/personal/personal",
+                "text": "我的",
+                "iconPath": "/static/images/home_normal.png",
+                "selectedIconPath": "/static/images/home.png"
+            },
+            {
+                "pagePath": "pages/myvedio/vedio",
+                "text": "云村",
+                "iconPath": "/static/images/video_normal.png",
+                "selectedIconPath": "/static/images/video.png"
+            }
+        ]
+    }
+}
