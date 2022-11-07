@@ -28,10 +28,11 @@ Page({
         let index = 0;
         let resultArr = []
         while (index < 5) {
-            let resultL = await request('/top/list', { idx: index++ })
+            let resultL = await request('/toplist', { idx: index++ })
+            // console.log(resultL)
             let listItem = {
-                name: resultL.playlist.name,
-                items: resultL.playlist.tracks.slice(0, 3)
+                name: resultL.artistToplist.name,
+                items: resultL.list.slice(0, 3)
             }
             resultArr.push(listItem)
             //不需要五次请求全部完成
