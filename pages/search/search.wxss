@@ -1,0 +1,101 @@
+.container{
+    padding: 0 20rpx;
+}
+.header{
+    display: flex;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding: 10rpx 0;
+}
+.searchInput{
+    flex: 1;
+    background: rgba(237, 237, 237, 0.3);
+    position: relative;
+    border-radius: 30rpx;
+}
+.clearSearch{
+    position: absolute;
+    right: 10rpx;
+    top: 0;
+    z-index: 10;
+}
+.search{
+    width: 100rpx;
+    text-align: center;
+}
+.searchIcon{
+    position: absolute;
+    left: 15rpx;
+}
+.input{
+    margin-left: 50rpx;
+    height: 60rpx;
+}
+.title{
+    font-size: 28rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #eee;
+}
+.hotList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    width: 50%;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 26rpx;
+}
+.order{
+    margin: 0 10rpx;
+}
+image{
+    width: 35rpx;
+    height: 20rpx;
+    margin-left: 10rpx;
+}
+.resultTitle{
+    color: #d43c33;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #d43c33;
+    font-size: 24rpx;
+}
+.resultItem{
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+}
+.resultText{
+    flex: 1;
+    margin-left: 10rpx;
+    font-size: 24rpx;
+    border-bottom: 1rpx solid #eee;
+}
+.history{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    line-height: 50rpx;
+    margin: 20rpx 0;
+}
+.hsitoryTitle{
+    font-size: 28rpx;
+    height: 50rpx;
+}
+.historyItem{
+    font-size: 26rpx;
+    background: #ededed;
+    height: 50rpx;
+    margin-left: 20rpx;
+    padding: 0 30rpx;
+    border-radius: 20rpx;
+    margin-bottom: 20rpx;
+}
+.delete{
+    font-size: 36rpx;
+    position: absolute;
+    bottom: 10rpx;
+    right: 15rpx;
+}

@@ -1,0 +1,132 @@
+.detail {
+    height: 100%;
+    background-color: rgb(34, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author {
+    color: whitesmoke;
+    position: relative;
+    top: 40rpx;
+}
+
+.needle {
+    width: 192rpx;
+    height: 274rpx;
+    position: relative;
+    left: 60rpx;
+    top: 88rpx;
+    z-index: 99;
+    transform: rotate(-30deg);
+    transform-origin: 40rpx 0;
+    transition: transform 1s;
+}
+
+.content {
+    width: 598rpx;
+    height: 598rpx;
+    position: relative;
+    top: -30rpx;
+}
+
+.discAnimation {
+    animation: disc 4s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes disc {
+    from {}
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.disc {
+    width: 598rpx;
+    height: 598rpx;
+}
+
+.gd {
+    width: 370rpx;
+    height: 370rpx;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.action {
+    transform: rotate(0);
+}
+
+.progress {
+    width: 640rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+    color: thistle;
+    font-size: 36rpx;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 200rpx;
+}
+
+.bar {
+    width: 450rpx;
+    height: 4rpx;
+    background: rgb(255, 255, 255, 0.4);
+    margin: auto;
+    position: relative;
+}
+.timel{
+    padding-right: 8rpx;
+    width: 104rpx;
+}
+.timer{ 
+    padding-left: 8rpx;
+    width: 104rpx;
+
+}
+.current{
+    height: 4rpx;
+    background-color: #d43c33;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.circle{
+    width: 14rpx;
+    height: 14rpx;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -5rpx;
+    right: -14rpx;
+    z-index: 2;
+}
+
+.control {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    bottom: 40rpx;
+}
+
+.control text {
+    color: whitesmoke;
+    font-size: 60rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+}
+
+.control text.big {
+    font-size: 88rpx;
+}

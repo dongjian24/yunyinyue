@@ -1,0 +1,73 @@
+.container .header {
+    width: 100%;
+    height: 400rpx;
+    position: relative;
+}
+
+.header image {
+    width: 100%;
+    height: 100%;
+}
+
+.date {
+    width: 300rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50rpx;
+    margin-left: -150rpx;
+    color: white;
+}
+
+.more {
+    float: right;
+}
+.nav{
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.content{
+    padding: 0 20rpx;
+    border-radius: 30rpx;
+    background-color: #fff;
+    position: relative;
+    top: -20rpx;
+}
+.list{
+    height: calc(100vh - 380rpx);
+}
+.item{
+    display: flex;
+    position: relative;
+    margin-bottom: 20rpx;
+}
+.item image{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 8rpx;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+.info text{
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    max-width: 400rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} 
+.item .iconfont{
+    position: absolute;
+    right: 0;
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: right;
+}

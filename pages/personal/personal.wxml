@@ -46,7 +46,7 @@
       </view>
       <view class="nav-item"  hover-class="common-hover"  hover-stay-time="50">
         <text class="iconfont icon-wode"></text>
-        <text>个人主页</text>
+        <text bindtap="getCode">个人主页</text>
       </view>
       <view class="nav-item" hover-class="common-hover"  hover-stay-time="50">
         <text class="iconfont icon-gexingzhuangban"></text>

@@ -1,7 +1,7 @@
 <view class="videoContainer">
     <view class="header">
         <image src="/static/images/bofang.png"></image>
-        <view class="search">搜索视频</view>
+        <view class="search" bindtap="search">搜索视频</view>
         <image src="/static/images/wangyiyun.png"></image>
     </view>
     <scroll-view scroll-x enable-flex scroll-with-animation="true" scroll-into-view="{{'scroll'+flag}}" class="navScroll">

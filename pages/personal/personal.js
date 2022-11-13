@@ -71,6 +71,16 @@ Page({
             recentList
         })
     },
+    getCode(){
+        wx.login({
+          success: async(res) => {
+            let code = res.code
+            // console.log(code)
+            let result = await request('/getOpenId',{code})
+            console.log(result)
+          },
+        })
+    },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */

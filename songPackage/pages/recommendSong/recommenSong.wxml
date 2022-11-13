@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="header">
+        <image src="/static/images/gd.jpeg" mode="" />
+        <view class="date">
+            <text class="month">{{month}}</text>
+            <text class="day">/{{day}}</text>
+        </view>
+    </view>
+    <view class="content">
+        <view class="nav">
+            <text>播放全部</text>
+            <text class="more">多选</text>
+        </view>
+        <scroll-view scroll-y class="list">
+            <view class="item" wx:for="{{list}}" data-index="{{index}}" data-song="{{item}}" wx:key="id" bindtap="toDetail">
+                <image src="{{item.al.picUrl}}" mode="" />
+                <view class="info">
+                    <text>{{item.name}}</text>
+                    <text>{{item.ar[0].name}}</text>
+                </view>
+                <text class="iconfont icon-gengduo"></text>
+            </view>
+        </scroll-view>
+    </view>
+</view>

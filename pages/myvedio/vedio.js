@@ -20,7 +20,6 @@ Page({
      */
     onLoad(options) {
         this.getVideoList()
-        this.getVideoGroup(this.data.flag)
     },
     async getVideoList() {
         let result = await request('/video/group/list')
@@ -29,6 +28,7 @@ Page({
             videoList: result.data.slice(0, 14),
             flag: result.data[0].id
         })
+        this.getVideoGroup(this.data.flag)
     },
     changeNav(event) {
         // let flag = event.currentTarget.id
@@ -101,6 +101,11 @@ Page({
         }
         this.setData({
             videoUpdateTime
+        })
+    },
+    search(){
+        wx.navigateTo({
+          url: '/pages/search/search',
         })
     },
     handleRefresher() {
@@ -727,7 +732,30 @@ Page({
     /**
      * 用户点击右上角分享
      */
-    onShareAppMessage() {
-
+    onShareAppMessage({from}) {
+        const promise = new Promise(resolve => {
+            setTimeout(() => {
+              resolve({
+                  title:'video'
+              })
+            }, 1000)
+          })
+        
+        if(from == 'button'){
+            console.log(from)
+            return {
+                title: 'button',
+                path: '/pages/myvedio',
+                promise
+            }
+        }else{
+            return {
+                title: 'menu',
+                path: '/pages/myvedio',
+                imageUrl:'/static/images/meinv.jpg',
+                promise
+            }
+        }
+        
     }
 })

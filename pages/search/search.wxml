@@ -1,0 +1,44 @@
+<view class="container">
+    <view class="header">
+        <view class="searchInput">
+            <text class="iconfont icon-sousuo searchIcon"></text>
+            <input type="text" value="{{value}}" class="input" bindinput="changeInput" placeholder="{{searchTitle}}" />
+            <text hidden="{{!value}}" bindtap="clearSearch" class="clearSearch">X</text>
+        </view>
+        <text class="search">取消</text>
+    </view>
+    <block wx:if="{{songs.length}}">
+        <view class="result">
+            <view class="resultTitle">搜索内容:{{value}}</view>
+            <view class="resultItem" wx:for="{{songs}}" wx:key="id">
+                <text class="iconfont icon-sousuo"></text>
+                <text class="resultText">{{item.name}}</text>
+            </view>
+        </view>
+    </block>
+
+    <block wx:else="">
+        <view class="history" wx:if="{{historyList.length}}">
+            <view class="historyTitle">
+                历史
+            </view>
+            <view class="historyItem" wx:for="{{historyList}}" wx:key="item">
+                {{item}}
+            </view>
+            <text class="iconfont icon-shanchu delete" bindtap="deleteHistory"></text>
+          
+        </view>
+        <view class="hot">
+            <view class="title">热搜榜</view>
+            <view class="hotList">
+                <view class="item" wx:for="{{list}}" wx:key="score">
+                    <text class="order">{{index+1}}</text>
+                    <text class="name">{{item.searchWord}}</text>
+                    <image src="{{item.iconUrl}}" mode="" />
+                </view>
+            </view>
+        </view>
+    </block>
+
+
+</view>

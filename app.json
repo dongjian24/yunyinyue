@@ -3,7 +3,8 @@
         "pages/index/index",
         "pages/personal/personal",
         "pages/myvedio/vedio",
-        "pages/login/login"
+        "pages/login/login",
+        "pages/search/search"
     ],
     "window": {
         "navigationBarBackgroundColor": "#d43c33",
@@ -36,5 +37,18 @@
                 "selectedIconPath": "/static/images/video.png"
             }
         ]
-    }
+    },
+    "requiredBackgroundModes": [
+        "audio"
+    ],
+    "subPackages": [
+        {
+            "root":"songPackage",
+            "pages":[
+                "pages/recommendSong/recommenSong",
+                "pages/songDetail/songDetail"
+            ]
+
+        }
+    ]
 }
